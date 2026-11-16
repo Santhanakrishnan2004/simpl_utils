@@ -1,0 +1,8 @@
+2026-11-10 09:12:01 INFO  login ok user=priya.sharma@example.com ip=203.0.113.42
+2026-11-10 09:12:07 INFO  profile update phone=+91 98765 43210 pan=ABCDE1234F
+2026-11-10 09:13:44 WARN  payment retry card=4111 1111 1111 1111 amount=1499.00
+2026-11-10 09:14:02 DEBUG request header Authorization: Bearer abcdefghijklmnop1234567890
+2026-11-10 09:14:03 DEBUG db url=postgres://admin:s3cretpw@db.internal:5432/app
+2026-11-10 09:15:30 INFO  deploy key AKIAIOSFODNN7EXAMPLE rotated
+2026-11-10 09:16:00 ERROR config password=Hunter2!x rejected
+2026-11-10 09:16:05 INFO  healthcheck ok version=1.2.3.4.5 order_id=8123456789012

@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simplutils"
+dynamic = ["version"]  # single source of truth: __version__ in src/simplutils/__init__.py
+description = "All-in-one offline developer utilities: Base64, hashing, JSON/YAML/CSV, JWT, PDF and image tools, QR codes, PII redaction. Library, CLI, interactive menu and local web UI."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["utilities", "base64", "pdf", "image", "json", "yaml", "jwt", "qr", "pii", "redaction", "cli", "toolbox"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Santhanakrishnan2004/simpl_utils"
+Repository = "https://github.com/Santhanakrishnan2004/simpl_utils"
+Issues = "https://github.com/Santhanakrishnan2004/simpl_utils/issues"
+
+[project.optional-dependencies]
+ui = ["nicegui>=3.0"]
+files = ["Pillow>=10", "pypdf>=4"]
+extras = ["PyYAML>=6", "segno>=1.6"]
+all = ["nicegui>=3.0", "Pillow>=10", "pypdf>=4", "PyYAML>=6", "segno>=1.6"]
+dev = ["pytest>=8", "build", "twine"]
+
+[project.scripts]
+simplutils = "simplutils.cli:main"
+
+[tool.hatch.version]
+path = "src/simplutils/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/simplutils"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "README.md", "PUBLISHING.md", "LICENSE", "pyproject.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

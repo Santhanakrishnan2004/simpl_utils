@@ -1,0 +1,8 @@
+{
+  "name": "billing-service",
+  "version": "1.5.0",
+  "replicas": 4,
+  "features": ["invoices", "refunds", "reports"],
+  "database": { "host": "db2.internal", "port": 5432 },
+  "timeout_seconds": 30
+}

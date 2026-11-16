@@ -1,0 +1,4 @@
+2026-11-11 09:40:42,565 INFO    pii-scan: 0 finding(s) {}
+2026-11-11 09:40:42,569 INFO    tool=pii-scan ok in=85 chars options={'only': '<hidden>', 'exclude': '<hidden>'} out=67 chars time=4ms
+2026-11-11 09:41:20,258 INFO    pii-scan: 9 finding(s) {'email': 1, 'ip-address': 1, 'phone': 1, 'pan': 1, 'credit-card': 1, 'bearer-token': 1, 'url-password': 1, 'aws-key': 1, 'password': 1}
+2026-11-11 09:41:20,267 INFO    tool=pii-scan ok in=618 chars options={'only': '<hidden>', 'exclude': '<hidden>'} out=571 chars time=11ms

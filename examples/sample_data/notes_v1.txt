@@ -1,0 +1,4 @@
+Meeting notes
+- Review the billing release
+- Fix the refund bug
+- Plan the Q4 roadmap

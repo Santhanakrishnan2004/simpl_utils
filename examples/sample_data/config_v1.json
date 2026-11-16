@@ -1,0 +1,8 @@
+{
+  "name": "billing-service",
+  "version": "1.4.0",
+  "replicas": 2,
+  "features": ["invoices", "refunds"],
+  "database": { "host": "db1.internal", "port": 5432 },
+  "legacy_mode": true
+}
